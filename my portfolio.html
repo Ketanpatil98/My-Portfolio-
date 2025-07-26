@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Ketan Patil</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <header>
+    <h1>Ketan Patil</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+  <h1>About Me :</h1>
+  <div class="about-container" data-aos="fade-up">
+    <div class="about-img">
+      <img src="ketan.jpg.jpeg" alt="Ketan Patil" class="profile-pic" />
+    </div>
+    <div class="about-text">
+      <p>
+        I am a passionate and motivated Computer Engineering graduate with a strong foundation in software development, data handling, and emerging technologies. I have worked on innovative academic projects such as Modern Agriculture Techniques and Air Canvas, where I applied my knowledge in IoT, computer vision, and Java programming.
+        <br><br>
+        With hands-on experience in HTML, CSS, JavaScript, Java, MySQL, and basic cloud concepts, I am committed to learning continuously and solving real-world problems through technology. I enjoy exploring new tools, building user-focused applications, and collaborating on team-driven solutions.
+        <br><br>
+        As a fresher, I am eager to contribute my skills to a forward-thinking organization and grow into a proficient developer, while staying up-to-date with industry trends and best practices. I value dedication, teamwork, and the drive to create impactful solutions through code and creativity.
+      </p>
+      <a href="ketanresume.pdf" download class="btn"><strong>Download Resume</strong> <i class="fas fa-download"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="skills">
+    <h1>Skills :</h1>
+     <div class="card-container" data-aos="fade-up">
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Java, Python</li>
+      <li>SQL, MySQL, Power BI</li>
+      <li>OpenCV, Air Canvas</li>
+      <li>Git, GitHub</li>
+    </ul>
+  </div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects :</h1>
+    <div class="card-container" data-aos="fade-up">
+    <div class="project">
+      <h2>1. Air Canvas (15 WEEKS) </h2>
+      <p>Air Canvas is a computer vision-based project that allows users to draw in the air using hand 
+gestures, captured via webcam and processed using OpenCV. It enables touchless interaction by 
+tracking color-marked objects or fingertips to draw on a virtual canvas.</p>
+    </div>
+    <br><hr><br>
+    <div class="project">
+      <h2>2. Modern Agriculture Techniques (15 WEEKS)</h2>
+      <p>This project focuses on integrating modern technologies like IoT sensors, automation, and data 
+analysis to improve agricultural productivity and efficiency. It helps monitor soil moisture, 
+temperature, and humidity to enable smart farming practices and reduce manual efforts. </p>
+    </div>
+    </div>
+  </section>
+
+  <section id="education">
+  <h2>Education :</h2>
+  <div class="timeline card-container" data-aos="fade-up">
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+      <div class="timeline-content">
+        <h3>B.E. in Computer Engineering</h3>
+        <p>Gangamai College of Engineering Nagaon, Dhule</p>
+        <p><strong>Year:</strong> 2021 - 2025</p>
+        <p><strong>CGPA:</strong> 8.24</p>
+        <p><strong>Percentage:</strong> 76.5%</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-school"></i></div>
+      <div class="timeline-content">
+        <h3>12th Standard</h3>
+        <p>Adarsh Junior College Kusumba, Dhule</p>
+        <p><strong>Year:</strong> 2020 - 2021</p>
+        <p><strong>Percentage:</strong> 82.5%</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-school"></i></div>
+      <div class="timeline-content">
+        <h3>10th Standard</h3>
+        <p>Krushna Highschool Morane, Dhule</p>
+        <p><strong>Year:</strong> 2018 - 2019</p>
+        <p><strong>Percentage:</strong> 67.7%</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card-container" data-aos="fade-up">
+    <p><strong>Email:</strong> ketanpatil2382003@gmail.com</p>
+    <p><strong>Phone:</strong> +91-7263002111</p>
+    <p><strong>GitHub: </strong><a href="https://github.com/yourusername">github.com/yourusername</a></p>
+  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ketan Patil. All rights reserved.</p>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+</script>
+
+
+
+
+</body>
+</html>
